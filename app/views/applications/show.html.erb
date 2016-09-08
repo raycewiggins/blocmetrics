@@ -1,0 +1,6 @@
+
+<h2>Check out your app: "<%= @application.name %>" at <%= link_to @application.url %> or return to your  <%= link_to 'dashboard', user_path(current_user.id) %>.</h2>
+<p>You can also edit your app info below. Or if you're having second thoughts you can always just delete it.</p>
+
+<%= link_to "Edit", edit_user_application_path(@application.user_id, @application), class: 'btn btn-success' %>
+<%= link_to "Unregister", user_application_path(@application.user_id, @application), method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you want to unregister this app? Doing so will cause you to lose all the analytics data acquired so far.' } %>

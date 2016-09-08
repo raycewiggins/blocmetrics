@@ -1,0 +1,11 @@
+<h1>Dashboard</h1>
+<p>Manage your applications by clicking on the name of the app. You can then edit your app's info or delete it if you no longer want it registered.</p>
+
+<h4>Register a new application</h4>
+<%= link_to "Register", new_user_application_path(@user), class: 'btn btn-success' %>
+
+<h4>Your apps</h4>
+<div>You currently have <%= @user.applications.count %> registered applications. </div>
+<% @applications.each do |application| %>
+  <div><%=link_to application.name, user_application_path(@user, application) %> at url: <%= link_to application.url %></div>
+<% end %>

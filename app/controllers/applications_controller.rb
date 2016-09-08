@@ -1,6 +1,7 @@
 class ApplicationsController < ApplicationController
     def show
       @application = Application.find(params[:id])
+      @events = @application.events
     end
 
     def new

@@ -2,8 +2,10 @@
 <h2>Check out your app: "<%= @application.name %>" at <%= link_to @application.url %> or return to your  <%= link_to 'dashboard', user_path(current_user.id) %>.</h2>
 <p>You can also edit your app info below. Or if you're having second thoughts you can always just delete it.</p>
 
+<%= pie_chart @application.events.group(:name).count %>
+
 <div>This app has <%= @events.count %> recorded events.</div>
-<div>The events are as follows:
+<div>Event List:
   <% @events.each do |event| %>
     <div><%= event.name %></div>
   <% end %>

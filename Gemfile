@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 gem 'devise'
 gem 'bootstrap-sass'
 gem 'faker'
+gem 'chartkick'
+gem 'groupdate'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

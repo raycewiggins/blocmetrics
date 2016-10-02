@@ -1,6 +1,6 @@
 # Blocmetrics
 
-![alt text](app/assets/images/blocmetrics_demo.jpeg "Blocmetrics")
+![alt text](app/assets/images/Blocmetrics.png "Blocmetrics")
 
 
 == README
